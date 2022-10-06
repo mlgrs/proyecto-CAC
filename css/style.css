@@ -265,22 +265,25 @@ h1 {
 
 /* FORMULARIO */
 
+.contacto-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .form-show {
-    background-color: var(--primary-color-lighter);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    right: 0;
     margin: 4px;
     padding: 4.5em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(219, 219, 219);
-    text-align: center;
+    /* text-align: center; */
     transition: transform 0.4s, top 0.4s;
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 800px;
+    
 }
 
 .form-title {
@@ -295,10 +298,11 @@ h1 {
 .form-container {
     margin-top: 3em;
     display: grid;
-    gap: 2.5em;
+    gap: 4em;
 }
 
 .form-group {
+    margin: 30px;
     position: relative;
     color: var(--text-primary-color);
 }
@@ -335,19 +339,7 @@ h1 {
 }
 
 .form-submit {
-    background-color: var(--primary-color);
-    color: var(--text-primary-color);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8em 0;
     border: none;
-    border-radius: .5em;
-    cursor: pointer;
-}
-
-.form-submit:hover {
-    background-color: var(--secondary-color);
 }
 
 .form-line {
@@ -366,21 +358,22 @@ h1 {
     transform: scale(1);
 } 
 
-#form-close {
-    height: 28px;
-    width: 28px;
-    top: 28px;
-    position: absolute;
-    left: 30px;
-    transition: .3s ease all;
-    cursor: pointer;
-}
 
+.form-image {
+    width: 100%;
+    max-width: 700px;
+    margin-left: 500px;
+}
 
 
 .inactive {
     display: none;
 }
+
+
+
+
+
 
 /* media queries */
 

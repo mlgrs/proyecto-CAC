@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icons/icons8-pets-64.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <title>DyC: cuida a tus amigos</title>
+  </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="./icons/icons8-pets-64-colored.png" alt="logo" />
+            <!-- <h2>D&C</h2> -->
+        </div>
+
+        <nav>
+          <div class="desktop-menu">
+          <ul>
+            <li><a href="">Adopta</a></li>
+            <li><a href="">Tienda</a></li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+          </div>
 
 
+          <img src="./icons/icons8-menu-64.png" alt="menu" class="menu">
+          <div class="mobile-menu inactive">
+          <ul>
+            <li><a href="">Adopta</a></li>
+            <li><a href="">Tienda</a></li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+          </div>
 
-   
-    <form  class="form-show inactive">
-        <img src="./icons/icons8-close-64.png" id="form-close" alt="">
+        </nav>
+      </div>
+
+      </div>
+    </header>
+
+
+    <img src="/images/form.png" alt="perros y gatos" class="form-image">
+
+
+<div class="contacto-container">
+    <form  class="form-show">
         <h1 class="form-title">Ingresa tus datos para postularte para la adopción</h1>
-        <p class="form-description"> Ingresa tus datos y te contactaremos para brindarte mas informacion. La concreción quedará sujeta a  la entrevista realizada. Para avanzar con la postulación, el formulario debe estar completo con los datos reales de quien va a adoptar.</p>
+        <p class="form-description"> Ingresa tus datos y te contactaremos para brindarte mas informacion. La concreción quedará sujeta a  la entrevista realizada. Para avanzar con la postulación, el formulario debe estar completo con los datos reales de quien va a adoptar. Si no cumples con los requisitos, no avanzaremos con la solicitud. Puede que no te respondamos de inmediato ya que nos tomamos un tiempo para verificar todas las solicitudes de pre adopción enviadas.</p>
 
         <div class="form-container">
           <div class="form-group">
             <input type="text" name="name" id="form-input" class="form-input" placeholder=" ">
             <label for="name" class="form-label">Nombre y apellido</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="number" name="dni" id="form-input" class="form-input" placeholder=" ">
+            <label for="dni" class="form-label">DNI</label>
             <span class="form-line"></span>
           </div>
 
@@ -35,9 +79,84 @@
             <span class="form-line"></span>
           </div>
 
-          <input type="submit" class="form-submit" value="Enviar">
+          <div class="form-group">
+            <input type="adress" name="adress" id="form-input" class="form-input" placeholder=" ">
+            <label for="adress" class="form-label">Dirección completa (altura y timbre)</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="localidad" id="form-input" class="form-input" placeholder=" ">
+            <label for="localidad" class="form-label">Localidad</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="vivienda" id="form-input" class="form-input" placeholder=" ">
+            <label for="vivienda" class="form-label">¿Qué tipo de vivienda habitás?</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="mascota" id="form-input" class="form-input" placeholder=" ">
+            <label for="mascota" class="form-label">Perro o Gato que querés adoptar</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="instagram" id="form-input" class="form-input" placeholder=" ">
+            <label for="intagram" class="form-label">Perfil de Facebook o Instagram</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="familiares" id="form-input" class="form-input" placeholder=" ">
+            <label for="familiares" class="form-label">Contános con quienes vivís y sus edades</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="otrosanimales" id="form-input" class="form-input" placeholder=" ">
+            <label for="otrosanimales" class="form-label">¿Tenés otros animales? Si es así, contanos cuáles y si están castrados</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="vacaciones" id="form-input" class="form-input" placeholder=" ">
+            <label for="vacaciones" class="form-label">¿Qué harías con el animal en caso de vacaciones?</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="mudanza" id="form-input" class="form-input" placeholder=" ">
+            <label for="mudanza" class="form-label">¿Qué harías con el animal en caso de mudanza?</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="vet" id="form-input" class="form-input" placeholder=" ">
+            <label for="vet" class="form-label">¿Tenés ya un veterinario/a de confianza?</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="compromiso" id="form-input" class="form-input" placeholder=" ">
+            <label for="compromiso" class="form-label">¿Te comprometes a vacunarlo anualmente, desparasitarlo y castrarlo?</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="comentarios" id="form-input" class="form-input" placeholder=" ">
+            <label for="comentarios" class="form-label">Comentarios que quieras dejarnos</label>
+            <span class="form-line"></span>
+          </div>
+
+          <input type="submit" class="button form-submit" value="Enviar">
 
         </div>
-      </form>
+    </form>
+
+</div>
+
 </body>
 </html>
