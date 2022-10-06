@@ -263,6 +263,49 @@ h1 {
 }
 
 
+.suscripcion-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suscripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 1000px;
+    height: 260px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin: 40px 50px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.suscripcion a{
+    text-decoration: none;
+}
+
+.suscripcionbutton {
+    background-color: var(--background-color);
+    border: none;
+}
+
+.suscripcionbutton:hover {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    transform: scale(1)!important;
+}
+
+.suscr1{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* FORMULARIO */
 
 .contacto-container {
@@ -369,8 +412,6 @@ h1 {
 .inactive {
     display: none;
 }
-
-
 
 
 
