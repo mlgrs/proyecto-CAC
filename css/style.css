@@ -322,8 +322,8 @@ h1 {
     box-sizing: border-box;
     margin: 4px;
     padding: 4.5em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(219, 219, 219);
+    /* border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(219, 219, 219); */
     /* text-align: center; */
     transition: transform 0.4s, top 0.4s;
     width: 100%;
@@ -406,8 +406,8 @@ h1 {
 
 .form-image {
     width: 100%;
-    max-width: 700px;
-    margin-left: 500px;
+    /* max-width: 700px;
+    margin-left: 500px; */
 }
 
 
