@@ -269,6 +269,7 @@ h1 {
     margin: 50px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -321,16 +322,20 @@ summary:hover {
     width: 600px;
 }
 
+details {
+    width: -webkit-fill-available;
+}
+
 details > summary::after {
     position: absolute;
     right: 20px;
-    width: 500px;
+    width: -webkit-fill-available;
   }
 
 details[open] > summary::after {
     position: absolute;
     right: 20px;
-    width: 500px;
+    width: -webkit-fill-available;
   }
 
 details > summary::-webkit-details-marker {
@@ -583,10 +588,14 @@ ul{
     .logo {
         flex-direction: column;
     }
-/* 
-    .logo img {
-        width: 100%;
-    } */
+
+    summary {
+        width: auto;
+    }
+    
+    .faq-content p {
+        width:-webkit-fill-available;;
+    }
 
     .menu {
         display: block;
