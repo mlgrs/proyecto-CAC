@@ -132,8 +132,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-light-color);
+    background: var(--secondary-color);
     transform: scale(1)!important;
 }
 
@@ -266,90 +265,171 @@ h1 {
     line-height: 30px;
 }
 
-.img-suscripcion{
-    width: 290px;
-}
-
-.suscripcion-container{
-    display: flex;
-    margin: .5rem;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.suscripcion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: .5rem;
-    height: 260px;
-    width: 66%;
-    border-radius: 10px;
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 20px;
-    transition: .3s;
-}
-
-.suscripcion:hover {
-    background: var(--secondary-color);
-    transition: .3s;
-}
-
-
-.suscripcion a{
-    text-decoration: none;
-}
-
-.suscripcionbutton {
-    background-color: var(--background-color);
-    border: none;
-    width: 120px;
-    font-size: 14px;
-    padding: 14px 0 14px;
-    margin-left: 6px;
-
-}
-
-.suscripcionbutton:hover {
-    background-color:var(--text-secondary-color);
-    color: var(--text-input-form-color);
-    transform: scale(1)!important;
-    transition: .3s;
-}
-
-.suscr1{
+.faq {
+    margin: 50px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-.suscr2{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-left: 52px;
+.faq-title h2 {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+.faq-title h2::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 60px;
+      height: 2px;
+      background: var(--primary-color);
+      bottom: -25px;
+      margin-left: -30px;
+  }
+
+.faq-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+  }
+
+summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color:var(--primary-color);
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    border-radius: 40px;
+    width: 600px;
+  }
+
+summary:hover {
+    background: rgb(239, 219, 227);
+    background: radial-gradient(circle, rgb(239, 219, 227) 0%, rgba(148,187,233,1) 90%);
 }
 
-.form-suscripcion {
-    display: flex;
-    flex-wrap: wrap;
-}
-  
-.input-suscripcion {
-    border: none;
-    background: var(--background-color);
-    border-radius: 30px;
-    width: 400px;
-    padding: .75rem 1rem;
-    height: 44px;
-    margin-left: 8px;
+.faq-content {
+    width: 600px;
 }
 
+details > summary::after {
+    position: absolute;
+    right: 20px;
+    width: 500px;
+  }
+
+details[open] > summary::after {
+    position: absolute;
+    right: 20px;
+    width: 500px;
+  }
+
+details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
 
 
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background: rgb(165,191,224);
+    background: linear-gradient(90deg, rgba(165,191,224,1) 0%, rgba(242,222,248,1) 50%, rgba(146,183,250,1) 100%);
+    padding: 70px 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: var(--text-primary-color);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--primary-color);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: var(--text-secondary-color);
+	text-decoration: none;
+	font-weight: 300;
+	color: var(--text-primary-color);
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: var(--text-secondary-color);
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: var(--background-color);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
 
 
 /* FORMULARIO */
@@ -387,7 +467,7 @@ h1 {
 .form-container {
     margin-top: 3em;
     display: grid;
-    gap: 4em;
+    gap: 6em;
 }
 
 .form-group {
@@ -529,9 +609,6 @@ h1 {
         width: 400px;
     }
     
-    .img-suscripcion {
-        display: none;
-    }
 
 }
 
