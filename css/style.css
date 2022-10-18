@@ -19,7 +19,6 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     background-color: var(--background-color);    
-    /* padding: 1.7rem 0 2rem; */
     width: 100%;
     min-height: 100vh;
 }
@@ -283,14 +282,14 @@ h1 {
   }
 
 .faq-title h2::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      width: 60px;
-      height: 2px;
-      background: var(--primary-color);
-      bottom: -25px;
-      margin-left: -30px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: var(--primary-color);
+    bottom: -25px;
+    margin-left: -30px;
   }
 
 .faq-title p {
@@ -324,6 +323,7 @@ summary:hover {
 
 details {
     width: -webkit-fill-available;
+    display: contents;
 }
 
 details > summary::after {
@@ -592,7 +592,11 @@ ul{
     summary {
         width: auto;
     }
-    
+
+    .faq-content {
+    width: auto;
+    }
+
     .faq-content p {
         width:-webkit-fill-available;;
     }
